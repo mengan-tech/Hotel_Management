@@ -1,0 +1,72 @@
+{
+
+  "users": [
+    { "id": 1, "name": "Han Mengan", "email": "mengan@example.com", "phone": "070712323", "role": "GUEST" },
+    { "id": 2, "name": "Sok Dara", "email": "reception@example.com", "phone": "012345678", "role": "RECEPTIONIST" },
+    { "id": 3, "name": "Chan Sopheap", "email": "manager@example.com", "phone": "016222111", "role": "MANAGER" }
+  ],
+
+  "roomTypes": [
+
+    { "id": 1, "name": "Standard Single", "bed": "Single bed", "sizeM2": 18, "capacity": 3, "priceUsd": 25, "priceKhr": 102500,
+      "description": "a good room with good view and for solo travelers.",
+      "features": ["Free Wi-Fi", "Air conditioning", "Hot shower"], 
+      "photos": [
+        "https://images.unsplash.com/photo-1702255489644-392758161f1f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1594560913095-8cf34bab82ad?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+
+    { "id": 2, "name": "Twin Room", "bed": "2 single beds", "sizeM2": 24, "capacity": 6, "priceUsd": 38, "priceKhr": 155800,
+      "description": "Two single beds, good for friends or colleagues.",
+      "features": ["Free Wi-Fi", "Air conditioning", "Smart TV"],
+      "photos": [
+        "https://images.unsplash.com/photo-1790774883982-7136ce871bc5?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1790774888379-dd545dfa3343?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+
+    { "id": 3, "name": "Deluxe Double", "bed": "Queen bed", "sizeM2": 28, "capacity": 3, "priceUsd": 45, "priceKhr": 184500,
+      "description": "A queen bed, a work desk and a large window over the city.",
+      "features": ["Free Wi-Fi", "Air conditioning", "Smart TV", "Work desk"],
+       "photos": [
+        "https://images.unsplash.com/photo-1631049421450-348ccd7f8949?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+
+    { "id": 4, "name": "Family Suite", "bed": "2 queen beds", "sizeM2": 42, "capacity": 8, "priceUsd": 80, "priceKhr": 328000,
+      "description": "Space for the whole family with two queen beds.",
+      "features": ["Free Wi-Fi", "Air conditioning", "Smart TV", "Daily housekeeping"], 
+      "photos": [
+      "https://images.unsplash.com/photo-1680210851458-b7dc5685e06e?auto=format&fit=crop&w=1200&q=80"
+    ]
+  }
+  ],
+
+  "rooms": [
+    { "id": 1, "number": "101", "floor": 1, "roomTypeId": 1, "status": "AVAILABLE" },
+    { "id": 2, "number": "102", "floor": 1, "roomTypeId": 1, "status": "CLEANING" },
+    { "id": 3, "number": "103", "floor": 1, "roomTypeId": 1, "status": "MAINTENANCE" },
+    { "id": 4, "number": "112", "floor": 1, "roomTypeId": 2, "status": "AVAILABLE" },
+    { "id": 5, "number": "113", "floor": 1, "roomTypeId": 2, "status": "AVAILABLE" },
+    { "id": 6, "number": "204", "floor": 2, "roomTypeId": 3, "status": "AVAILABLE" },
+    { "id": 7, "number": "207", "floor": 2, "roomTypeId": 3, "status": "AVAILABLE" },
+    { "id": 8, "number": "305", "floor": 3, "roomTypeId": 4, "status": "AVAILABLE" }
+  ],
+
+  "bookings": [
+    
+    { "id": 1, "userId": 1, "roomTypeId": 3, "roomId": 6, "checkIn": "2026-11-20", "checkOut": "2026-11-22",
+      "guests": 2, "status": "CONFIRMED", "specialRequest": "Late arrival around 22:00", "totalUsd": 90 },
+
+    { "id": 2, "userId": 1, "roomTypeId": 4, "roomId": 8, "checkIn": "2026-12-24", "checkOut": "2026-12-27",
+      "guests": 4, "status": "PENDING", "totalUsd": 240 },
+
+    { "id": 3, "userId": 1, "roomTypeId": 2, "roomId": 4, "checkIn": "2026-10-03", "checkOut": "2026-10-05",
+      "guests": 2, "status": "CHECKED_OUT", "totalUsd": 76 },
+
+    { "id": 4, "userId": 1, "roomTypeId": 1, "roomId": 1, "checkIn": "2026-09-11", "checkOut": "2026-09-12",
+      "guests": 1, "status": "CANCELLED", "totalUsd": 25 }
+  ]
+
+}

@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+
+@theme {
+  --color-primary: #2563eb;
+  --color-ink: #0f172a;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+  --color-surface: #f1f5f9;
+  --color-page: #f5f7fb;
+  --color-danger: #dc2626;
+  --font-sans: 'Inter Variable', Inter, system-ui, sans-serif;
+}
+
+
+.nav-link.router-link-active {
+  color: var(--color-ink);
+  font-weight: 600;
+}
